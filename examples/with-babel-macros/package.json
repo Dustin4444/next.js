@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "15.0.7",
     "preval.macro": "^5.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
