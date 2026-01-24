@@ -3,10 +3,11 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "webpack-bundle-analyzer": "^4.6.1",
-    "webpack-stats-plugin": "^1.1.0",
+    "@vercel/analytics": "1.6.1",
     "next": "workspace:*",
-    "next-minimal-server": "workspace:*"
+    "next-minimal-server": "workspace:*",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-stats-plugin": "^1.1.0"
   },
   "scripts": {
     "build-application": "next build",
