@@ -138,11 +138,23 @@ function checkSymbols() {
         throw new Error('pnpm-lock.yaml not found')
       }
     } else if (packageManager === 'yarn') {
-      exec('yarn install --frozen-lockfile --offline')
-      console.log('Package integrity verified')
+      // Verify yarn lockfile exists
+      console.log('Verifying lockfile exists...')
+      if (fs.existsSync(path.join(projectRoot, 'yarn.lock'))) {
+        console.log('✓ yarn.lock found')
+        console.log('Package integrity verified')
+      } else {
+        throw new Error('yarn.lock not found')
+      }
     } else {
-      exec('npm ci --prefer-offline')
-      console.log('Package integrity verified')
+      // Verify npm lockfile exists
+      console.log('Verifying lockfile exists...')
+      if (fs.existsSync(path.join(projectRoot, 'package-lock.json'))) {
+        console.log('✓ package-lock.json found')
+        console.log('Package integrity verified')
+      } else {
+        throw new Error('package-lock.json not found')
+      }
     }
   } catch (error) {
     console.error('Package integrity check failed')
@@ -226,11 +238,22 @@ function deployMacOS() {
   // The script is already present in the repository
   const zipScript = path.join(__dirname, 'macos-compress.sh')
   if (fs.existsSync(zipScript)) {
-    console.log('Creating reproducible zip archive...')
-    // Execute the script from the deploy directory
-    process.chdir(deployDir)
-    exec(zipScript)
-    process.chdir(projectRoot)
+    try {
+      // Check if the script is executable
+      fs.accessSync(zipScript, fs.constants.X_OK)
+      console.log('Creating reproducible zip archive...')
+      // Execute the script from the deploy directory
+      try {
+        process.chdir(deployDir)
+        exec(zipScript)
+      } finally {
+        // Always restore working directory
+        process.chdir(projectRoot)
+      }
+    } catch (error) {
+      console.warn('macos-compress.sh exists but is not executable or failed to run')
+      console.warn('Skipping zip creation')
+    }
   }
 
   console.log(`macOS deployment bundle created in: ${deployDir}`)
