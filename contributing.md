@@ -9,6 +9,7 @@
 
 - [Triaging](./contributing/repository/triaging.md)
 - [Linting](./contributing/repository/linting.md)
+- [Maintenance](./contributing/repository/maintenance.md)
 - [Release Channels and Publishing](./contributing/repository/release-channels-publishing.md)
 - [Pull Request Descriptions](./contributing/repository/pull-request-descriptions.md)
 
