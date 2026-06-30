@@ -280,7 +280,7 @@
     "seedrandom": "3.0.5",
     "semver": "7.3.7",
     "serve-handler": "6.1.6",
-    "shell-quote": "1.7.3",
+    "shell-quote": "1.8.4",
     "strip-ansi": "6.0.0",
     "styled-jsx": "5.1.6",
     "styled-jsx-plugin-postcss": "3.0.2",
