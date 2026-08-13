@@ -229,7 +229,7 @@
     "jest-extended": "4.0.2",
     "jest-junit": "16.0.0",
     "jest-snapshot": "30.0.0-alpha.6",
-    "js-yaml": "4.2.0",
+    "js-yaml": "4.3.0",
     "json5": "2.2.3",
     "kleur": "^4.1.0",
     "ky": "0.19.1",
