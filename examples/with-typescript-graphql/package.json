@@ -11,7 +11,7 @@
     "@apollo/client": "^3.5.10",
     "graphql-tag": "^2.12.6",
     "@graphql-tools/load-files": "6.0.18",
-    "graphql-yoga": "three",
+    "graphql-yoga": "3.4.1",
     "@graphql-tools/merge": "6.0.18",
     "@graphql-tools/schema": "6.0.18",
     "graphql": "15.8.0",
@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/typed-document-node": "^2.2.8",
-    "@graphql-codegen/cli": "2.13.7",
+    "@graphql-codegen/cli": "2.16.4",
     "@graphql-codegen/client-preset": "1.1.0",
     "@graphql-codegen/typescript-resolvers": "^2.6.1",
     "@types/jest": "^27.0.2",
