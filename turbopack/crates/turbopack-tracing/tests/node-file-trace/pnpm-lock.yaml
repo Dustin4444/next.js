@@ -121,7 +121,7 @@ importers:
         version: 3.8.3(encoding@0.1.13)
       consolidate:
         specifier: ^1.0.4
-        version: 1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.17.21)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6)
+        version: 1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.18.1)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6)
       copy:
         specifier: ^0.3.2
         version: 0.3.2
@@ -375,8 +375,8 @@ importers:
         specifier: ^11.0.5
         version: 11.0.5
       vm2:
-        specifier: ^3.10.4
-        version: 3.10.5
+        specifier: ^3.11.4
+        version: 3.11.4
       vue:
         specifier: ^3.5.13
         version: 3.5.17(typescript@5.9.3)
@@ -3395,6 +3395,11 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  acorn@8.17.0:
+    resolution: {integrity: sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   after@0.8.2:
     resolution: {integrity: sha512-QbJ0NTQ/I9DI3uSJA4cbexiwQeRAfjPScqIbSjUDd9TOrcg6pTkdgziesOqxBMBzit8vFCTwrP27t13vFOORRA==}
 
@@ -3821,7 +3826,7 @@ packages:
   basic-ftp@5.0.5:
     resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
     engines: {node: '>=10.0.0'}
-    deprecated: Security vulnerability fixed in 5.2.0, please upgrade
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   bcp47@1.1.2:
     resolution: {integrity: sha512-JnkkL4GUpOvvanH9AZPX38CxhiLsXMBicBY2IAtqiVN8YulGDQybUydWA4W6yAMtw6iShtw+8HEF6cfrTHU+UQ==}
@@ -4600,8 +4605,8 @@ packages:
     resolution: {integrity: sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==}
     engines: {node: '>=12.0.0'}
 
-  cross-fetch@3.1.8:
-    resolution: {integrity: sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==}
+  cross-fetch@3.2.0:
+    resolution: {integrity: sha512-Q+xVJLoGOeIMXZmbUK4HYk+69cQH6LudR0Vu/pRm2YlU/hDV9CiS0gKUMaWY5f2NeUH9C1nV3bsTlCo0FsTV1Q==}
 
   cross-spawn@6.0.5:
     resolution: {integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==}
@@ -4934,6 +4939,7 @@ packages:
 
   dottie@2.0.7:
     resolution: {integrity: sha512-7lAK2A0b3zZr3UC5aE69CPdCFR4RHW1o2Dr74TqFykxkUCBXSRJum/yPc7g8zRHJqWKomPLHwFLLoUnn8PXXRg==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -6930,6 +6936,9 @@ packages:
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   log-ok@0.1.1:
     resolution: {integrity: sha512-cc8VrkS6C+9TFuYAwuHpshrcrGRAv7d0tUJ0GdM72ZBlKXtlgjUZF84O+OhQUdiVHoF7U/nVxwpjOdwUJ8d3Vg==}
@@ -10050,23 +10059,27 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@7.0.3:
     resolution: {integrity: sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.0.0:
     resolution: {integrity: sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uvu@0.5.6:
@@ -10123,8 +10136,8 @@ packages:
   vm-browserify@1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
 
-  vm2@3.10.5:
-    resolution: {integrity: sha512-3P/2QDccVFBcujfCOeP8vVNuGfuBJHEuvGR8eMmI10p/iwLL2UwF5PDaNaoOS2pRGQEDmJRyeEcc8kmm2Z59RA==}
+  vm2@3.11.4:
+    resolution: {integrity: sha512-3assDRyB+A9/5rjECD2e2FAlezOfzCqejZy0L36zij4LgzoWZRA3a26q3PZnl6o5PmNjrTBRbAWACpdK/Y3qOQ==}
     engines: {node: '>=6.0'}
     hasBin: true
 
@@ -14867,9 +14880,13 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  acorn-jsx@5.3.2(acorn@8.15.0):
+  acorn-import-attributes@1.9.5(acorn@8.17.0):
     dependencies:
-      acorn: 8.15.0
+      acorn: 8.17.0
+
+  acorn-jsx@5.3.2(acorn@8.17.0):
+    dependencies:
+      acorn: 8.17.0
 
   acorn-node@1.8.2:
     dependencies:
@@ -14881,11 +14898,13 @@ snapshots:
 
   acorn-walk@8.3.5:
     dependencies:
-      acorn: 8.15.0
+      acorn: 8.17.0
 
   acorn@7.4.1: {}
 
   acorn@8.15.0: {}
+
+  acorn@8.17.0: {}
 
   after@0.8.2: {}
 
@@ -16120,12 +16139,12 @@ snapshots:
 
   console-control-strings@1.1.0: {}
 
-  consolidate@1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.17.21)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6):
+  consolidate@1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.18.1)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6):
     optionalDependencies:
       '@babel/core': 7.29.0
       coffee-script: 1.12.7
       ejs: 3.1.8
-      lodash: 4.17.21
+      lodash: 4.18.1
       pug: 3.0.4
       react: 16.14.0
       react-dom: 16.14.0(react@16.14.0)
@@ -16249,7 +16268,7 @@ snapshots:
     dependencies:
       luxon: 3.7.2
 
-  cross-fetch@3.1.8(encoding@0.1.13):
+  cross-fetch@3.2.0(encoding@0.1.13):
     dependencies:
       node-fetch: 2.7.0(encoding@0.1.13)
     transitivePeerDependencies:
@@ -18020,8 +18039,8 @@ snapshots:
 
   import-in-the-middle@1.14.2:
     dependencies:
-      acorn: 8.15.0
-      acorn-import-attributes: 1.9.5(acorn@8.15.0)
+      acorn: 8.17.0
+      acorn-import-attributes: 1.9.5(acorn@8.17.0)
       cjs-module-lexer: 1.2.2
       module-details-from-path: 1.0.4
 
@@ -18871,7 +18890,7 @@ snapshots:
   jsdom@16.7.0(canvas@2.11.2(encoding@0.1.13)):
     dependencies:
       abab: 2.0.6
-      acorn: 8.15.0
+      acorn: 8.17.0
       acorn-globals: 6.0.0
       cssom: 0.4.4
       cssstyle: 2.3.0
@@ -19237,6 +19256,8 @@ snapshots:
   lodash.sortby@4.7.0: {}
 
   lodash@4.17.21: {}
+
+  lodash@4.18.1: {}
 
   log-ok@0.1.1:
     dependencies:
@@ -19685,8 +19706,8 @@ snapshots:
 
   micromark-extension-mdxjs@1.0.0:
     dependencies:
-      acorn: 8.15.0
-      acorn-jsx: 5.3.2(acorn@8.15.0)
+      acorn: 8.17.0
+      acorn-jsx: 5.3.2(acorn@8.17.0)
       micromark-extension-mdx-expression: 1.0.3
       micromark-extension-mdx-jsx: 1.0.3
       micromark-extension-mdx-md: 1.0.0
@@ -20368,7 +20389,7 @@ snapshots:
     dependencies:
       '@zazuko/node-fetch': 2.6.6
       concat-stream: 1.6.2
-      cross-fetch: 3.1.8(encoding@0.1.13)
+      cross-fetch: 3.2.0(encoding@0.1.13)
       readable-error: 1.0.0
       readable-stream: 3.6.2
     transitivePeerDependencies:
@@ -22174,7 +22195,7 @@ snapshots:
       '@rdfjs/to-ntriples': 1.0.2
       get-stream: 5.2.0
       jsonstream2: 3.0.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       nodeify-fetch: 2.2.2(encoding@0.1.13)
       promise-the-world: 1.0.1
       rdf-transform-triple-to-quad: 1.0.2
@@ -23216,9 +23237,9 @@ snapshots:
 
   vm-browserify@1.1.2: {}
 
-  vm2@3.10.5:
+  vm2@3.11.4:
     dependencies:
-      acorn: 8.15.0
+      acorn: 8.17.0
       acorn-walk: 8.3.5
 
   void-elements@3.1.0: {}
