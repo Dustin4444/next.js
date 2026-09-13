@@ -121,7 +121,7 @@ importers:
         version: 3.8.3(encoding@0.1.13)
       consolidate:
         specifier: ^1.0.4
-        version: 1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.17.21)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6)
+        version: 1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.18.1)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6)
       copy:
         specifier: ^0.3.2
         version: 0.3.2
@@ -213,8 +213,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       mariadb:
-        specifier: ^2.0.5
-        version: 2.5.6
+        specifier: ^3.5.3
+        version: 3.5.3
       memcached:
         specifier: ^2.2.2
         version: 2.2.2
@@ -310,7 +310,7 @@ importers:
         version: 7.7.4
       sequelize:
         specifier: ^6.29.0
-        version: 6.37.8(mariadb@2.5.6)(oracledb@4.2.0)(pg@8.20.0)(sqlite3@5.1.2(encoding@0.1.13))
+        version: 6.37.8(mariadb@3.5.3)(oracledb@4.2.0)(pg@8.20.0)(sqlite3@5.1.2(encoding@0.1.13))
       serialport:
         specifier: ^13.0.0
         version: 13.0.0
@@ -3209,8 +3209,8 @@ packages:
   '@types/node@16.9.1':
     resolution: {integrity: sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==}
 
-  '@types/node@17.0.45':
-    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+  '@types/node@26.4.0':
+    resolution: {integrity: sha512-faiGnoIrLH/V8cibOMEAZ8pMw6oXqSukl29ra4mN8GdaB2ZewzeaLj+INpV5N+Z1eKWzY+IzaIZH2EIR6YZRNQ==}
 
   '@types/pg-pool@2.0.6':
     resolution: {integrity: sha512-TaAUE5rq2VQYxab5Ts7WZhKNmuN78Q6PiFonTDdpbx8a1H0M1vhy3rhiMjl+e2iHmogyMw7jZF4FrE6eJUy5HQ==}
@@ -3821,7 +3821,7 @@ packages:
   basic-ftp@5.0.5:
     resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
     engines: {node: '>=10.0.0'}
-    deprecated: Security vulnerability fixed in 5.2.0, please upgrade
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   bcp47@1.1.2:
     resolution: {integrity: sha512-JnkkL4GUpOvvanH9AZPX38CxhiLsXMBicBY2IAtqiVN8YulGDQybUydWA4W6yAMtw6iShtw+8HEF6cfrTHU+UQ==}
@@ -4599,9 +4599,10 @@ packages:
   cron-parser@4.9.0:
     resolution: {integrity: sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==}
     engines: {node: '>=12.0.0'}
+    deprecated: v4 is no longer maintained, upgrade to v5
 
-  cross-fetch@3.1.8:
-    resolution: {integrity: sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==}
+  cross-fetch@3.2.0:
+    resolution: {integrity: sha512-Q+xVJLoGOeIMXZmbUK4HYk+69cQH6LudR0Vu/pRm2YlU/hDV9CiS0gKUMaWY5f2NeUH9C1nV3bsTlCo0FsTV1Q==}
 
   cross-spawn@6.0.5:
     resolution: {integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==}
@@ -4619,6 +4620,7 @@ packages:
 
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    deprecated: Active development of CryptoJS has been discontinued. This library is no longer maintained.
 
   cson-parser@1.3.5:
     resolution: {integrity: sha512-Pchz4dDkyafUL4V3xBuP9Os8Hu9VU96R+MxuTKh7NR+D866UiWrhBiSLbfuvwApEaJzpXhXTr3iPe4lFtXLzcQ==}
@@ -4934,6 +4936,7 @@ packages:
 
   dottie@2.0.7:
     resolution: {integrity: sha512-7lAK2A0b3zZr3UC5aE69CPdCFR4RHW1o2Dr74TqFykxkUCBXSRJum/yPc7g8zRHJqWKomPLHwFLLoUnn8PXXRg==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -5950,6 +5953,10 @@ packages:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
 
+  iconv-lite@0.7.3:
+    resolution: {integrity: sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==}
+    engines: {node: '>=0.10.0'}
+
   idb@3.0.2:
     resolution: {integrity: sha512-+FLa/0sTXqyux0o6C+i2lOR0VoS60LU/jzUo5xjfY6+7sEEgy4Gz1O7yFBXvjd7N0NyIGWIRg8DcQSLEG+VSPw==}
 
@@ -6931,6 +6938,9 @@ packages:
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
+
   log-ok@0.1.1:
     resolution: {integrity: sha512-cc8VrkS6C+9TFuYAwuHpshrcrGRAv7d0tUJ0GdM72ZBlKXtlgjUZF84O+OhQUdiVHoF7U/nVxwpjOdwUJ8d3Vg==}
     engines: {node: '>=0.10.0'}
@@ -7005,8 +7015,8 @@ packages:
     resolution: {integrity: sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==}
     engines: {node: '>=8'}
 
-  lru-cache@11.5.0:
-    resolution: {integrity: sha512-5YgH9UJd7wVb9hIouI2adWpgqrrICkt070Dnj8EUY1+B4B2P9eRLPAkAAo6NICA7CEhOIeBHl46u9zSNpNu7zA==}
+  lru-cache@11.5.2:
+    resolution: {integrity: sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==}
     engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
@@ -7063,9 +7073,9 @@ packages:
     resolution: {integrity: sha512-4y7uGv8bd2WdM9vpQsiQNo41Ln1NvhvDRuVt0k2JZQ+ezN2uaQes7lZeZ+QQUHOLQAtDaBJ+7wCbi+ab/KFs+w==}
     engines: {node: '>=0.10.0'}
 
-  mariadb@2.5.6:
-    resolution: {integrity: sha512-zBx7loYY5GzLl8Y6AKxGXfY9DUYIIdGrmEORPOK9FEu0pg5ZLBKCGJuucHwKADxTBxKY7eM4rxndqxRcnMZKIw==}
-    engines: {node: '>= 10.13'}
+  mariadb@3.5.3:
+    resolution: {integrity: sha512-i053Kc0MgdUv/hu9mCyq67TYfPXFj3/MV8I7ZW5wvJNixIyXC0VztMPUjIVj/449nQo+BsxFD4Fdk/sA/uqKPQ==}
+    engines: {node: '>= 20.0.0'}
 
   markdown-extensions@1.1.1:
     resolution: {integrity: sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==}
@@ -8346,9 +8356,6 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  please-upgrade-node@3.2.0:
-    resolution: {integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==}
-
   png-js@1.0.0:
     resolution: {integrity: sha512-k+YsbhpA9e+EFfKjTCH3VW6aoKlyNYI6NYdTfDL4CIvFnvsuO84ttonmZE7rc+v23SLTH8XX+5w/Ak9v0xGY4g==}
 
@@ -8954,9 +8961,6 @@ packages:
   semaphore@1.1.0:
     resolution: {integrity: sha512-O4OZEaNtkMd/K0i6js9SL+gqy0ZCBMgUvlSqHKi4IBdjhe7wB8pwztUk1BbZ1fmrvpwFrPbHzqd2w5pTcJH6LA==}
     engines: {node: '>=0.8.0'}
-
-  semver-compare@1.0.0:
-    resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
 
   semver@5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
@@ -9890,6 +9894,9 @@ packages:
   underscore@1.7.0:
     resolution: {integrity: sha512-cp0oQQyZhUM1kpJDLdGO1jPZHgS/MpzoWYfe9+CM2h/QGDZlqwT2T3YGukuBdaNJ/CAPoeyAZRRHz8JFo176vA==}
 
+  undici-types@8.3.0:
+    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
+
   unfetch@5.0.0:
     resolution: {integrity: sha512-3xM2c89siXg0nHvlmYsQ2zkLASvVMBisZm5lF3gFDqfF2xonNStDJyMpvaOBe0a1Edxmqrf2E0HBdmy9QyZaeg==}
 
@@ -10050,23 +10057,27 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@7.0.3:
     resolution: {integrity: sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.0.0:
     resolution: {integrity: sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uvu@0.5.6:
@@ -14646,7 +14657,9 @@ snapshots:
 
   '@types/node@16.9.1': {}
 
-  '@types/node@17.0.45': {}
+  '@types/node@26.4.0':
+    dependencies:
+      undici-types: 8.3.0
 
   '@types/pg-pool@2.0.6':
     dependencies:
@@ -16120,12 +16133,12 @@ snapshots:
 
   console-control-strings@1.1.0: {}
 
-  consolidate@1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.17.21)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6):
+  consolidate@1.0.4(@babel/core@7.29.0)(coffee-script@1.12.7)(ejs@3.1.8)(lodash@4.18.1)(pug@3.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(swig@1.4.2)(underscore@1.13.6):
     optionalDependencies:
       '@babel/core': 7.29.0
       coffee-script: 1.12.7
       ejs: 3.1.8
-      lodash: 4.17.21
+      lodash: 4.18.1
       pug: 3.0.4
       react: 16.14.0
       react-dom: 16.14.0(react@16.14.0)
@@ -16249,7 +16262,7 @@ snapshots:
     dependencies:
       luxon: 3.7.2
 
-  cross-fetch@3.1.8(encoding@0.1.13):
+  cross-fetch@3.2.0(encoding@0.1.13):
     dependencies:
       node-fetch: 2.7.0(encoding@0.1.13)
     transitivePeerDependencies:
@@ -18000,6 +18013,10 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
+  iconv-lite@0.7.3:
+    dependencies:
+      safer-buffer: 2.1.2
+
   idb@3.0.2: {}
 
   ieee754@1.1.13: {}
@@ -19238,6 +19255,8 @@ snapshots:
 
   lodash@4.17.21: {}
 
+  lodash@4.18.1: {}
+
   log-ok@0.1.1:
     dependencies:
       ansi-green: 0.1.1
@@ -19352,7 +19371,7 @@ snapshots:
 
   lowercase-keys@2.0.0: {}
 
-  lru-cache@11.5.0: {}
+  lru-cache@11.5.2: {}
 
   lru-cache@5.1.1:
     dependencies:
@@ -19422,15 +19441,13 @@ snapshots:
     dependencies:
       object-visit: 1.0.1
 
-  mariadb@2.5.6:
+  mariadb@3.5.3:
     dependencies:
       '@types/geojson': 7946.0.16
-      '@types/node': 17.0.45
+      '@types/node': 26.4.0
       denque: 2.1.0
-      iconv-lite: 0.6.3
-      long: 5.2.0
-      moment-timezone: 0.5.48
-      please-upgrade-node: 3.2.0
+      iconv-lite: 0.7.3
+      lru-cache: 11.5.2
 
   markdown-extensions@1.1.1: {}
 
@@ -20368,7 +20385,7 @@ snapshots:
     dependencies:
       '@zazuko/node-fetch': 2.6.6
       concat-stream: 1.6.2
-      cross-fetch: 3.1.8(encoding@0.1.13)
+      cross-fetch: 3.2.0(encoding@0.1.13)
       readable-error: 1.0.0
       readable-stream: 3.6.2
     transitivePeerDependencies:
@@ -20748,7 +20765,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.5.0
+      lru-cache: 11.5.2
       minipass: 7.1.3
 
   path-source@0.1.3:
@@ -20920,10 +20937,6 @@ snapshots:
   pkginfo@0.3.1: {}
 
   playwright-core@1.27.1: {}
-
-  please-upgrade-node@3.2.0:
-    dependencies:
-      semver-compare: 1.0.0
 
   png-js@1.0.0: {}
 
@@ -21697,8 +21710,6 @@ snapshots:
 
   semaphore@1.1.0: {}
 
-  semver-compare@1.0.0: {}
-
   semver@5.7.1: {}
 
   semver@6.3.1: {}
@@ -21735,7 +21746,7 @@ snapshots:
 
   sequelize-pool@7.1.0: {}
 
-  sequelize@6.37.8(mariadb@2.5.6)(oracledb@4.2.0)(pg@8.20.0)(sqlite3@5.1.2(encoding@0.1.13)):
+  sequelize@6.37.8(mariadb@3.5.3)(oracledb@4.2.0)(pg@8.20.0)(sqlite3@5.1.2(encoding@0.1.13)):
     dependencies:
       '@types/debug': 4.1.13
       '@types/validator': 13.15.10
@@ -21754,7 +21765,7 @@ snapshots:
       validator: 13.15.26
       wkx: 0.5.0
     optionalDependencies:
-      mariadb: 2.5.6
+      mariadb: 3.5.3
       oracledb: 4.2.0
       pg: 8.20.0
       sqlite3: 5.1.2(encoding@0.1.13)
@@ -22174,7 +22185,7 @@ snapshots:
       '@rdfjs/to-ntriples': 1.0.2
       get-stream: 5.2.0
       jsonstream2: 3.0.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       nodeify-fetch: 2.2.2(encoding@0.1.13)
       promise-the-world: 1.0.1
       rdf-transform-triple-to-quad: 1.0.2
@@ -22948,6 +22959,8 @@ snapshots:
   underscore@1.13.6: {}
 
   underscore@1.7.0: {}
+
+  undici-types@8.3.0: {}
 
   unfetch@5.0.0: {}
 
