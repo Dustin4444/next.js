@@ -39,6 +39,6 @@
   "devDependencies": {
     "@napi-rs/cli": "3.7.2",
     "cross-env": "6.0.3",
-    "wasm-pack": "0.13.1"
+    "wasm-pack": "0.15.0"
   }
 }
