@@ -4,7 +4,7 @@
     "dev": "next dev --turbo"
   },
   "dependencies": {
-    "next": "14.3.0-canary.44",
+    "next": "15.5.16",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
