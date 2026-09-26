@@ -46,7 +46,7 @@
     "cowsay": "^1.4.0",
     "debug": "^4.3.4",
     "es-get-iterator": "^1.1.0",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.28.1",
     "esm": "^3.2.25",
     "express": "^4.21.2",
     "fast-glob": "^3.1.1",
