@@ -18,6 +18,6 @@
     "lucide-react": "^0.383.0",
     "mermaid": "^10.9.1",
     "next": "workspace:*",
-    "tailwindcss": "3.2.7"
+    "tailwindcss": "4.0.0"
   }
 }
