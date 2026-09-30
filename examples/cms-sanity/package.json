@@ -30,7 +30,7 @@
     "postcss": "^8.4.47",
     "react": "^19",
     "react-dom": "^19",
-    "sanity": "^3.62.0",
+    "sanity": "^4.6.1",
     "sanity-plugin-asset-source-unsplash": "^3.0.1",
     "server-only": "^0.0.1",
     "styled-components": "^6.1.13",
