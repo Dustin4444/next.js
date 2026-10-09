@@ -1,4 +1,0 @@
-'use client'
-export default function CustomGlobalError() {
-  return <html><body><p id="fallback">Custom global fallback</p></body></html>
-}

@@ -1,89 +1,27 @@
-# build output
-dist
-!.github/actions/*/dist
-.next
-.next-profiles
-target
-packages/next/wasm/@next
-tarballs/
-packages/**/*.tgz
-
-# rust compiler crashes
-rustc-ice-*.txt
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
-package-lock.json
-yarn.lock
-!/yarn.lock
-test/node_modules
-.pnpm-store/
-.github/**/node_modules
+/node_modules
 
-# logs & pids
-*.log
-pids
-*.cpuprofile
-*.heapsnapshot
-.next-profiles
+# next.js
+/.next/
+/out/
 
-# coverage
-.nyc_output
-coverage
+# production
+/build
 
-# test output
-test/**/out/*
-test/**/next-env.d.ts
-test/**/.next*
-.DS_Store
-/e2e-tests
-test/tmp/**
-test/.trace
-test/traces
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Editors
-**/.idea
-**/.#*
-.nvmrc
+# env files
+.env*
 
-# examples
-examples/**/out/*
-
-# env
-.env*.local
-evals/.env
-
-pr-stats.md
-test-timings.json
-
-# Vercel
+# vercel
 .vercel
-.now
 
-# Cache
+# typescript
 *.tsbuildinfo
-.swc/
-.turbo
-
-# Storybook
-*storybook.log
-
-# Claude Code (local settings and session files)
-.claude/settings.local.json
-.claude/plans/
-.claude/todos.json
-.claude/worktrees
-.claude/scheduled_tasks.lock
-CLAUDE.local.md
-
-# Conductor (worktrees created by Conductor app, but keep scripts/)
-.conductor/*/
-!.conductor/scripts/
-
-index.scip
-
-# Evals
-evals/.tarballs/
-evals/experiments/
-evals/results/
-evals/agent-results.json
+next-env.d.ts

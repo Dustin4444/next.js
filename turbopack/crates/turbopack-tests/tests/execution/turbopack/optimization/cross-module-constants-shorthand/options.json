@@ -1,5 +1,0 @@
-{
-  "scopeHoisting": false,
-  "mangleExportNames": false,
-  "crossModuleConstants": true
-}

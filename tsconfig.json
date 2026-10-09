@@ -1,43 +1,27 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-    "strict": false,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "target": "ES6",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "target": "ESNext",
+    "module": "esnext",
     "moduleResolution": "bundler",
-    "types": ["react", "jest", "node", "trusted-types", "jest-extended"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "development-sandbox": ["./test/lib/development-sandbox"],
-      "next-test-utils": ["./test/lib/next-test-utils"],
-      "next-webdriver": ["./test/lib/next-webdriver"],
-      "e2e-utils": ["./test/lib/e2e-utils"],
-      "e2e-utils/*": ["./test/lib/e2e-utils/*"],
-      "test-data-service/*": ["./test/lib/test-data-service/*"],
-      "test-log": ["./test/lib/test-log"],
-      "router-act": ["./test/lib/router-act"],
-      "@next/playwright": ["./packages/next-playwright/src/index.ts"]
+      "@/*": ["./*"]
     }
   },
-  "include": [
-    "run-tests.js",
-    "evals/lib/**/*",
-    "evals/next-upgrade/experiments/**/*.ts",
-    "evals/next-upgrade/lib/**/*.ts",
-    "evals/next-upgrade/security/setup.ts",
-    "test/**/*.test.ts",
-    "test/**/*.test.tsx",
-    "test/**/*.util.ts",
-    "test/e2e/app-dir/use-cache-custom-handler/*.js",
-    "test/lib/**/*.ts",
-    "scripts/**/*.js",
-    "scripts/**/*.cjs",
-    "scripts/**/*.mjs",
-    "scripts/**/*.ts",
-    "turbo/**/*.ts"
-  ],
-  "exclude": ["scripts/minimal-server.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
